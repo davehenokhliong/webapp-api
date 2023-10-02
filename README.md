@@ -1,12 +1,15 @@
-We are assigned to design and develop a Web app that retrieves and displays ‘real-time’ passenger flight information from Hong Kong Airport Open Data. This REST web service provided by HK Airport returns historical data (including current calendar day) in JSON format. For this assignment, we only display current calendar date departure and arrival passenger flight information. The Web app should be nicely rendered on any desktop computer and smart phone.
+I designed and developed a Web app that retrieves and displays ‘real-time’ passenger flight information from Hong Kong Airport Open Data. This REST web service provided by HK Airport returns historical data (including current calendar day) in JSON format. 
 
-Objectives
-1. To learn how to make use of Open Data (API).
-2. To practice using JavaScript to (1) create dynamic contents, (2) carry out AJAX communication for
-retrieving Open Data, and (3) selectively display flight information.
-3. To practice using CSS styling to design a flexible and responsive layout.
+I displayed current calendar date departure and arrival passenger flight information, and the web app is nicely rendered on any desktop computer and smart phone.
 
-We are going to make use of the data provided by the REST API of the Airport Authority for building our Web App.
+Here is the specifications for the file:
+- index.html for HTML code and the Javascript functions
+- styles.css for responsive styles
+- flight.php to allow our web server to act as a client to request flight data from Hong Kong Airport and relay the data to our web app, since unfortunately we cannot directly fetch HK Airport flight data through our web app (no CORS setting).
+- iata.json for more descriptive information about an airport (since the destination and the origin airports are encoded by the standard IATA code, not full name of the airports)
+
+Data provided by the REST API of the Airport Authority for building the Web App.
 Website: https://data.gov.hk/en-data/dataset/aahk-team1-flight-info
-You can download the data dictionary about the request parameters and the response data set from here.
+
+Data dictionary about the request parameters and the response data set from here.
 https://www.hongkongairport.com/iwov-resources/misc/opendata/Flight_Information_DataSpec_en.pdf
